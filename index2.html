@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      .section-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .cta-container {
+        color: white;
+        padding: 40px 40px 40px 20px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        height: 390px;
+        display: grid;
+        align-content: space-between;
+      }
+      .cta-container h2 {
+        font-size: 3rem;
+        margin: 0px;
+      }
+      .cta-container p {
+        margin-bottom: 50px;
+      }
+      .cta-container a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .cta-container a::after {
+        content: ">";
+        margin-left: 20px;
+      }
+      .gray-cta {
+        background: #5b5b5b;
+      }
+      .purple-cta {
+        background: #2d006d;
+      }
+      .graydark-cta {
+        background: #1e1e1e;
+      }
+      .right-ctas {
+        margin: 0 15px;
+      }
+      .two-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .first-col {
+        margin-right: 20px;
+      }
+
+      .module_container {
+        margin-top: 20px;
+      }
+      .image-cta img {
+        width: 100%;
+      }
+      .white-cta-container {
+        padding: 30px 20px;
+        box-shadow: 1px 6px 12px 0px rgba(0, 0, 0, 0.16);
+      }
+      .white-cta-container h3 {
+        color: #ff7900;
+      }
+      .white-cta-container a {
+        text-decoration: none;
+        color: #1e1e1e;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 30px;
+        display: block;
+      }
+      .subscribe-cta {
+        background: #ff7900;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 0 20px;
+        box-shadow: 1px 6px 12px 0px rgba(0, 0, 0, 0.1);
+      }
+      .subscribe-cta h3 {
+        color: white;
+      }
+      .subscribe-cta p {
+        color: white;
+      }
+      .subscribe-cta button {
+        margin: 0 auto;
+        margin-top: 40px;
+        border-radius: 20px;
+        background: white;
+        color: #ff7900;
+        border: none;
+        display: block;
+        padding: 10px 50px;
+        width: 100%;
+      }
+      .subscribe-cta input {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        height: 32px;
+        border-radius: 6px;
+        border: none;
+      }
+      .subscribe-cta input::placeholder {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-container">
+      <div class="left-ctas">
+        <div class="cta-container gray-cta">
+          <h2>Casos de éxito</h2>
+          <p>
+            Conoce la manera en que CarSync ha optimizado el negocio de algunas
+            de las empresas más importantes de la región
+          </p>
+          <a href="#"> Ver casos de éxito</a>
+        </div>
+        <div class="cta-container purple-cta">
+          <h2>E-books</h2>
+          <p>
+            Descarga ebooks, infografías, catálogos y manuales de usuarios, todo
+            lo que puedas para entender como podemos ayudarte a optimizar tu
+            negocio
+          </p>
+          <a href="#"> Ver casos de éxito</a>
+        </div>
+        <div class="cta-container graydark-cta">
+          <h2>Webinars</h2>
+          <p>
+            Tutoriales, capacticationse, certificaciones y más recursos
+            multimedia necesarios para
+          </p>
+          <a href="#"> Ver casos de éxito</a>
+        </div>
+      </div>
+      <div class="right-ctas">
+        <div class="row">
+          <div class="two-cols">
+            <div class="first-col">
+              <div class="image-cta">
+                <img src="images/recursos_1.jpg" />
+                <div class="white-cta-container">
+                  <h3>Seguridad y conducción</h3>
+                  <a href="#"
+                    >¿Cómo evitar la somnolencia en conductores de una flota?</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="second-col">
+              <div class="subscribe-cta">
+                <h3>Suscríbete a nuestro boletín</h3>
+                <p>
+                  Déjanos tus datos y mantente al día en noticias y artículos de
+                  interés del sector.
+                </p>
+                <form>
+                  <input placeholder="Nombre" />
+                  <input placeholder="Apellido" />
+                  <input placeholder="Email" />
+                  <button>Subscribirme</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="module_container">
+            <div class="image-cta">
+              <img src="images/recursos_2.jpg" />
+              <div class="white-cta-container">
+                <h3>Seguridad y conducción</h3>
+                <a href="#"
+                  >¿Cómo evitar la somnolencia en conductores de una flota?</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .main_container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .ebook_container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+      }
+      .ebook_container .fecha-ebook {
+        display: inline-block;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <section class="ebook_container">
+        <div class="ebook_info">
+          <div class="meta">
+            <span class="categoria">Categoría</span
+            ><span class="fecha-ebook">Enero 21, 2021</span>
+          </div>
+          <h1>Guia: Aumenta la rentabilidad de tu negocio</h1>
+          <p>
+            ¿Sabías que en 2019 se emitieron más de 150.000 multas de tránsito
+            en Ecuador? Cifra que se tradujo en más de 80 millones de dólares
+            que desembolsaron los conductores. En CarSync te pasamos el listado
+            de aquellas multas de tránsito que más se emiten en el país. Desde
+            60 hasta 800 dólares, y más…, son las cifras que muchos deben pagar
+            por no respetar las normas de tránsito. Además, más que un dolor
+            para el bolsillo, una infracción puede convertirse, en cuestión de
+            segundos, en un accidente fatal. Conoce y respeta las normas de
+            tránsito para hacer de la vía un lugar más seguro. El exceso de
+            velocidad, utilizar el teléfono mientras se conduce, no utilizar el
+            cinturón de seguridad, entre otras, son las multas de tránsito más
+            comunes responsables de que miles de ecuatorianos sigan
+            desembolsando grandes cantidades de dinero año tras año, conoce más
+            aquí.
+          </p>
+          <button>Descárgalo ahora</button>
+        </div>
+        <div class="ebook_image"></div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .main_container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .section_container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .side_nav_section > h3 {
+        font-size: 24px;
+        font-weight: bolder;
+      }
+      .side_nav_section > h3::after {
+        content: "";
+        border-bottom: 1px solid black;
+        display: block;
+        margin-top: 20px;
+      }
+      .side_nav_section {
+        list-style-type: none;
+        margin-bottom: 45px;
+      }
+      .side_nav_section a {
+        text-decoration: none;
+        color: #1e1e1e;
+        font-size: 16px;
+      }
+      .side_nav_section .active {
+        color: #ff7900;
+      }
+      .side_nav_section li {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="breadcrumbs"></div>
+      <div class="section_container">
+        <div class="side_nav">
+          <ul class="side_nav_section">
+            <h3>Recursos</h3>
+            <li><a class="active" href="#">Blog (50)</a></li>
+            <li><a href="#">E-books (50)</a></li>
+            <li><a href="#">Casos de éxito</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+          <ul class="side_nav_section">
+            <h3>Categorías</h3>
+            <li><a href="#">Gestión de flotas</a></li>
+            <li><a href="#">Generador de carga</a></li>
+            <li><a href="#">Operador logístico</a></li>
+            <li><a href="#">Seguridad y prevención</a></li>
+            <li><a href="#">Gestión de personal</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Vehículo personal</a></li>
+          </ul>
+          <ul class="side_nav_section">
+            <h3>Industrias</h3>
+            <li><a href="#">Petróleo, gas y minas</a></li>
+            <li><a href="#">Servicios especiales</a></li>
+            <li><a href="#">Transporte de pasajeros</a></li>
+            <li><a href="#">Transporte de carga</a></li>
+            <li><a href="#">Sector público</a></li>
+            <li><a href="#">Pymes y negocios</a></li>
+          </ul>
+        </div>
+        <section class="content_section"></section>
+      </div>
+    </div>
+  </body>
+</html>
